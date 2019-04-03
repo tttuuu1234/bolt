@@ -2,13 +2,109 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="This is my portfolio site.">
+    <meta name="keywords" content="bolt, bootstrap, portfolio">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pad.css" media="screen and (min-width:768px) and (max-width:1199px)">
+    <link rel="stylesheet" href="css/sp.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Bolt - Free Bootstrap 3 Theme</title>
   </head>
-  <body>
+  
+  <body class="body">
+    <header class="header">
+        <div class="inner header-contents">
+          <div class="header-contents__bolt"><i class="fas fa-bolt"></i></div>
+          <a href="#" class="header-contents__contact__btn">Contact</a>
+          <div class="header-contents__sp__menu">
+            <div class="header-contents__sp__humberger"></div>
+            <div class="header-contents__sp__humberger"></div>
+            <div class="header-contents__sp__humberger"></div>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="main-title">
+        <h1 class="inner inner-main__title">Bolt Theme</h1>
+        <h2 class="inner inner-sub__title">FREE BOOTSTRAP THEME</h2>
+      </div>
+
+      <div class="main-introduction">
+        <section class="inner main-introduction-section">
+          <figure><img src="img/iphone.png" alt="Bolt" class="main-introduction__img"></figure>
+          <h2 class="inner main-introduction__title">WHAT WE CAN DO?</h2>
+          <p class="inner main-introduction__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </section>
+      </div>
+
+      <article class="news-article">
+        <a href="#"><h2 class="news-article__title">OUR LATEST WORK</h2></a>
+        <ul class="inner news-article__list">
+          <li class="news-article__list__img"><a href="#"><img src="img/01.jpg" alt="Boltの記事"></a></li>
+          <li class="news-article__list__img"><a href="#"><img src="img/02.jpg" alt="Boltの記事"></a></li>
+          <li class="news-article__list__img"><a href="#"><img src="img/03.jpg" alt="Boltの記事"></a></li>
+          <li class="news-article__list__img"><a href="#"><img src="img/04.jpg" alt="Boltの記事"></a></li>
+          <li class="news-article__list__img"><a href="#"><img src="img/05.jpg" alt="Boltの記事"></a></li>
+          <li class="news-article__list__img"><a href="#"><img src="img/06.jpg" alt="Boltの記事"></a></li>
+        </ul>
+
+        <div class="inner news-article-footer">
+          <p class="news-article__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+          </p>
+          <a href="#" class="news-article__contact">EmailMe!</a>      
+        </div>
+      </article>
+
+      <section class="skill-section">
+        <h2 class="inner skill-section__title">OUR SKILLS</h2>
+
+        <div class="inner skill-section__container__img">
+          <figure class="skill-section__img">
+            <img src="img/circle_01.png" alt="Boltskill">
+            <figcaption class="skill-section__name">JavaScript</figcaption>
+          </figure>
+          
+          <figure class="skill-section__img">
+            <img src="img/circle_02.png" alt="Boltskill">
+            <figcaption class="skill-section__name">BootStrap</figcaption>
+          </figure>
+
+          <figure class="skill-section__img">
+            <img src="img/circle_03.png" alt="Boltskill">
+            <figcaption class="skill-section__name">WordPress</figcaption>
+          </figure>
+
+          <figure class="skill-section__img">
+            <img src="img/circle_04.png" alt="Boltskill">
+            <figcaption class="skill-section__name">PhotoShop</figcaption>
+          </figure>      
+        </div>
+      </section>
+
+      <nav class="sns-nav">
+        <div class="inner sns-nav__list">
+          <a href="#" class="sns-nav__list__item"><i class="fab fa-facebook-f is-icon"></i></a>
+          <a href="#" class="sns-nav__list__item"><i class="fab fa-dribbble is-icon"></i></a>
+          <a href="#" class="sns-nav__list__item"><i class="fab fa-twitter is-icon"></i></a>
+          <a href="#" class="sns-nav__list__item"><i class="fas fa-envelope is-icon"></i></a>
+        </div>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <div class="inner footer-box">
+        <p class="footer-box__text">Crafted with<i class="fas fa-heart"></i>By Black Tie.Co</p>
+      </div>
+    </footer>
 
   </body>
 </html>

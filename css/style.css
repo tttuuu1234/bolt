@@ -2,11 +2,11 @@
 
 .body{
   color: #333;
+  font-family: "Lato";
 }
 
 .inner{
   width: 1100px;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -16,6 +16,16 @@ a{
 
 img{
   vertical-align: bottom;
+}
+
+.title-font{
+  font-family: "Raleway";
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: block;
 }
 
 /* header */
@@ -60,6 +70,10 @@ img{
 /* header */
 
 /* main-title */
+.main{
+  padding-top: 70px
+}
+
 .main-title{
   background-color: #f2f2f2;
   margin-top: auto;
@@ -89,16 +103,18 @@ img{
 
 .main-introduction-section{
   overflow: auto;
+  /* float: left; */
 }
 
 .main-introduction__img{
+  margin-right: 246px;
   float: left;
-  margin-right: 149px;
 }
 
 .main-introduction__text,
 .main-introduction__title{
   color: #fff;
+  text-align: center;
 }
 
 
@@ -117,11 +133,12 @@ img{
 /*main-news*/
 .news-article{
   background-color: #f2f2f2;
+  padding: 60px 0 70px 0;
 }
 .news-article__title{
   text-align: center;
-  padding-top: 60px;
   margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .news-article__list{
@@ -129,11 +146,12 @@ img{
   flex-wrap: wrap;
 }
 
-.news-article__list__img{
+.news-article__link{
   opacity: .7;
+  transition: .3s;
 }
 
-.news-article__list__img:hover{
+.news-article__link:hover{
   opacity: 1.0;
   transition: .3s
 }
@@ -157,13 +175,16 @@ img{
 
 .news-article-footer{
   display: flex;
-  padding-bottom: 70px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .news-article__text{
   margin-left: 90px;
-  word-wrap: break-word;
+  word-wrap: break-all;
   line-height: 32px;
+  width: 460px;
 }
 
 .news-article__contact{
@@ -173,6 +194,8 @@ img{
   color: #fff;
   margin:0 140px 0 90px;
   line-height: 36px;
+  width: 150px;
+  transition: .3s;
 }
 
 .news-article__contact:hover{
@@ -184,18 +207,20 @@ img{
 /*main-ourskills*/
 .skill-section{
   background-color: #4e4e4e;
+  padding:70px 0 100px 0;
 }
 
 .skill-section__title{
   color: #fff;
-  padding: 70px 0;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 24px;
 }
 
 .skill-section__container__img{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 .skill-section__img{
@@ -210,6 +235,7 @@ img{
   color: #fff;
   font-size: 16px;
   margin-top: 10px;
+  text-align: center;
 }
 /*main-ourskills*/
 
@@ -223,23 +249,22 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .sns-nav__list__item{
   color: #74cfae;
   font-size: 40px;
   width: 185px;
+  padding: 20px 0;
+  transition: .3s;
 }
 
 .sns-nav__list__item:nth-child(n+4){
   margin-right: 0;
 }
 
-.is-icon{
-  padding: 20px 0;
-}
-
-.is-icon:hover{
+.sns-nav__list__item:hover{
   background-color: #fff;
   transition: .3s;
   width: 185px;
@@ -262,3 +287,212 @@ img{
 }
 /*footer*/
 
+@media screen and (min-width:768px) and (max-width:1199px){
+  .inner{
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .header-contents__sp__menu,
+  .header-contents__sp__hemberger{
+    display: none;
+  }
+
+  .main-introduction{
+    padding-bottom: 25px;
+  }
+
+  .main-introduction__img{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .main-introduction-section{
+    text-align: center;
+  }
+
+  .main-introduction__text{
+    margin: 0 86px 0 86px;
+  }
+
+  .news-article{
+    text-align: center;
+  }
+  
+  .news-article__list{
+    display: block;
+  }
+
+  .news-article__list__img:nth-child(n+1),
+  .news-article__list__img:nth-child(n+4){
+    margin: 0;
+  }
+
+  .news-article__list__img:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .news-article-footer{
+    display: block;
+  }
+
+  .news-article__text{
+    margin-left: 110px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .news-article__contact{
+    margin: 0 auto;
+  }
+
+  .skill-section{
+    text-align: center;
+  }
+
+  .skill-section__container__img{
+    display: block;
+  }
+
+  .skill-section__img{
+    margin:0 0 88px; 
+  }
+
+  .skill-section__img:nth-child(n+4){
+    margin: 0;
+  }
+
+  .sns-nav__list__item{
+    width: 25%;
+  }
+
+  .sns-nav__list__item:hover{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:767px){
+  .inner{
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .header-contents__contact__btn{
+    display: none;
+  }
+
+  .header-contents__sp__menu{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+    position: relative;
+  }
+
+
+  .header-contents__sp__humberger{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    height: 1px;
+    width: 14px;
+    background-color: #ddd;
+    display: inline-block;
+    box-sizing: border-box;  
+  }
+
+  .header-contents__sp__humberger:nth-of-type(1){
+    top:6px;
+  }
+
+  .header-contents__sp__humberger:nth-of-type(2){
+    top:9px;
+  }
+
+  .header-contents__sp__humberger:nth-of-type(3){
+    top: 12px;
+  }
+
+  .main-title{
+    padding: 160px 0 130px;
+  }
+
+  .inner-main__title{
+    font-size: 80px;
+  }
+
+  .main-introduction-section{
+    text-align: center;
+  }
+
+  .main-introduction__img{
+    float: none;
+    margin: 0 0 25px;
+  }
+
+  .main-introduction{
+    padding-bottom: 25px;
+  }
+
+  .news-article{
+    text-align: center;
+  }
+
+  .news-article__list{
+    display: block;
+  }
+
+  .news-article__list__img:nth-child(n+1),
+  .news-article__list__img:nth-child(n+4){
+    margin: 0;
+  }
+
+  .news-article__list__img:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .news-article-footer{
+    display: block;
+  }
+
+  .news-article__text{
+    margin: 0 0 40px;
+    line-height: 26px;
+    width:100%;
+  }
+
+  .news-article__contact{
+    margin: 0;
+    line-height: 26px;
+  }
+
+  .skill-section{
+    text-align: center;
+  }
+
+  .skill-section__container__img{
+    display: block;
+    padding-bottom: 88px;
+  }
+
+  .skill-section__img{
+    margin: 0 0 88px;
+  }
+
+  .skill-section__img:nth-child(n+4){
+    margin: 0;
+  }
+
+    .sns-nav{
+      padding: 50px 0;
+    }
+  
+    .sns-nav__list{
+      display: block;
+    }
+  
+    .sns-nav__list__item > .is-icon{
+      width: 185px;
+      padding: 25px 0;
+    }
+}

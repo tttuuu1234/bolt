@@ -149,6 +149,7 @@ img{
 .news-article__link{
   opacity: .7;
   transition: .3s;
+  display: inline-block;
 }
 
 .news-article__link:hover{
